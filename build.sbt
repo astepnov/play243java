@@ -10,7 +10,9 @@ libraryDependencies ++= Seq(
   javaJdbc,
   cache,
   javaWs,
-  "junit" % "junit" % "4.12" % "test"
+  "org.postgresql" % "postgresql" % "9.3-1101-jdbc41",
+  "junit" % "junit" % "4.12" % "test",
+  "org.mockito" % "mockito-all" % "1.9.5" % "test"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the
