@@ -1,0 +1,13 @@
+@(form: Form[forms.FormWithGroups])
+
+@main("Test Validate Form") {
+    @helper.form(action = routes.FormValidationController.formValidate()) {
+        @helper.inputText(form("withoutGroup"))
+        @helper.inputText(form("name"))
+        @helper.inputText(form("description"))
+        @helper.inputText(form("text"))
+        @helper.inputText(form("groupSequence"))
+
+        <button type="submit">Send</button>
+    }
+}
