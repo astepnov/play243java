@@ -8,4 +8,6 @@ public interface SomeService {
     String getSomeString();
 
     int getSomeInt();
+
+    void useSecondSomeService();
 }

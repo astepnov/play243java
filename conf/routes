@@ -9,5 +9,10 @@ GET         /common              @controllers.CommonController.index()
 GET         /formValidate        @controllers.FormValidationController.formValidatePage()
 POST        /formValidate        @controllers.FormValidationController.formValidate()
 
+GET         /uploadFile          @controllers.UploadFileController.uploadFilePage()
+POST        /uploadFile          @controllers.UploadFileController.upload()
+
+GET         /requireJsTest      @controllers.RequireJSController.index()
+
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)

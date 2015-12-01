@@ -1,0 +1,17 @@
+@(form: Form[forms.WithFileForm])
+
+@views.html.main("Upload File") {
+    @helper.form(action = routes.UploadFileController.upload, 'enctype -> "multipart/form-data") {
+
+        @helper.inputText(form("text"))
+        @helper.inputFile(form("picture"))
+
+        <label>
+            Without Name
+            <input value="some text" type="text">
+        </label>
+        <p>
+            <input type="submit">
+        </p>
+    }
+}
